@@ -1,5 +1,20 @@
  
 <!DOCTYPE html>
+<script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12") {
+                e.preventDefault();
+            }
+        });
+
+        document.addEventListener("copy", function(e) {
+            e.preventDefault();
+        });
+    </script><meta name="description" content="我们是「天彬TianBin」的制作团队！文天玩WenTianPlay(文天玩网络科技有限公司)建立于2017年3月12日，创立于2024年5月3日……，我们是一个年轻有活力的团队，致力于二次元ACG文化在各个领域的探索，2024年我们开始着手于AIGC与二次元文化的深度结合，推出WenTianPlay AI原生二次元UCG平台与天彬TianBin二次元游戏等产品。"/>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -60,49 +75,68 @@
     <h1 style="color: var(--primary-color); text-align: center; margin-bottom: 2rem;">
         官方域名公示系统
         <br>
-        <small style="font-size: 0.8em; color: #95a5a6;">数据来源：域名WHOIS数据库</small>
+        <small style="font-size: 0.8em; color: #95a5a6;">数据来源：文天玩WenTianPlay</small>
     </h1>
-
     <div id="domainList">
         <div class="domain-card" data-domain="WenTianPlay.com" 
              data-regdate="2024-5-3" 
-             data-url="https://wentianplay.com">
+             data-url="https://www.wentianplay.com">
             <div class="domain-name">
                 WenTianPlay.com
                 <span class="official-badge">官方认证</span>
             </div>
             <div class="domain-regdate">
-                注册时间：2024年5月3日
+                【国际站】注册时间：2024年5月3日
             </div>
         </div>
-
-        <div class="domain-card" data-domain="WenTianPlay.net" 
-             data-regdate="2024-12-27" 
-             data-url="https://wentianplay.net">
-            <div class="domain-name">
-                WenTianPlay.net
-                <span class="official-badge">官方认证</span>
-            </div>
-            <div class="domain-regdate">
-                注册时间：2024年12月27日（WHOIS记录）
-            </div>
-        </div>
-
-        <div class="domain-card" data-domain="WenTianPlay.cn" 
+<div class="domain-card" data-domain="WenTianPlay.cn" 
              data-regdate="2024-12-14" 
-             data-url="https://wentianplay.cn">
+             data-url="https://www.wentianplay.cn">
             <div class="domain-name">
                 WenTianPlay.cn
                 <span class="official-badge">官方认证</span>
             </div>
             <div class="domain-regdate">
-                注册时间：2024年12月14日（CNNIC备案）
+                【中国站】注册时间：2024年12月14日
             </div>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll('.domain-card').forEach(card => {
+<div class="domain-card" data-domain="WenTianPlay.net" 
+             data-regdate="2024-12-27" 
+             data-url="https://www.wentianplay.net">
+            <div class="domain-name">
+                WenTianPlay.net
+                <span class="official-badge">官方认证</span>
+            </div>
+            <div class="domain-regdate">
+                【数据站】注册时间：2024年12月27日
+            </div>
+        </div>
+<div class="domain-card" data-domain="WenTianPlay.top" 
+             data-regdate="2025-3-31" 
+             data-url="https://www.wentianplay.top">
+            <div class="domain-name">
+                WenTianPlay.top
+                <span class="official-badge">官方认证</span>
+            </div>
+            <div class="domain-regdate">
+                【备案站】注册时间：2025年3月31日
+            </div>
+        </div>
+    </div>
+<div class="domain-card" data-domain="空位" 
+             data-regdate="2024-12-14" 
+             data-url="index.html">
+            <div class="domain-name">
+                空位
+                <span class="official-badge">官方认证</span>
+            </div>
+            <div class="domain-regdate">
+                【空位】注册时间：XXXX年XX月XX日
+            </div>
+        </div>
+    </div>
+<script> document.querySelectorAll('.domain-card').forEach(card => {
             card.addEventListener('click', function() {
                 // 复制域名到剪贴板
                 const domain = this.dataset.domain;
@@ -126,6 +160,11 @@
             });
         });
     </script>
+
+    <div class="footer">
+        <a href="https://WenTianPlay.TOP/" target="_blank">彬ICP备20258956号</a>
+        <p>© 2025 文天玩WenTianPlay 版权所有</p>
+    </div>
 </body>
 </html>
  
